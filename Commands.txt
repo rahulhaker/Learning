@@ -22,4 +22,6 @@ git reset <filename> - Moved back from stage to normal any changes.
 git checkout <filename> - Clear any changes not in staged and made upto date to last commit
 
 #install SSL for GITHUB
+
+xx
 '''
