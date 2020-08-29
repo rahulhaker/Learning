@@ -1,0 +1,15 @@
+'''
+GIT Commands
+git status
+git log
+git init
+git add .
+git commit -m "Version1"
+git --version
+git config --globaluser user.name
+git config --globaluser user.email "rahulhaker.gmail.com"
+git diff <Filename>
+git push origin master
+git pull origin master
+#install SSL for GITHUB
+'''
