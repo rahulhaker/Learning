@@ -2,7 +2,11 @@
 GIT Commands
 
 git status
-git log
+git log --oneline -4
+
+git commit --amend
+Vi editor:
+i to insert, Esc: come out of editor,SHFT: to enter, w to write and q to quit
 
 git init
 git add . [-A for All, . New and Modified but not deleted, -U Modified and Deleted not new]
@@ -23,5 +27,7 @@ git checkout <filename> - Clear any changes not in staged and made upto date to 
 
 #install SSL for GITHUB
 
-xx
+gitk - open UI
+
+git squash
 '''

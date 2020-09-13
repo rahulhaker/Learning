@@ -27,25 +27,23 @@ print("ShortIfElse=> ","A is greater than B") if a>b else print("ShortIfElse=> "
 def functionwithnoreturn():
     print ("Function1=> ", "Simple Function")
 def sumof(a,b):
-    """
-    Docstring=>This is the docstring used to explain about the functions
-    including anything from developer points of view
-    """
+    """Docstring=>This is the docstring used to explain about the functions
+    including anything from developer points of view """
     print("Function2=> ","This is from InsideFunction, sum is ",a+b )
     return a+b
 h = sumof(a,b)
 print("Function3=> ", f"Sum is {h}", functionwithnoreturn())
-print("Function4=> ", "Other built in",sum((a,b)),eval("c + b"))
+print("Function4=> ", sumof.__doc__,"Other built in",sum((a,b)),eval("c + b"))
 
 #Try-Except
 def divide(a,x, y):
-...     try:
-...         result = x / y
-...     except ZeroDivisionError:
-...         print(a+"Division by zero!")
-...     else:
-...         print(a+"Result is", result)
-...     finally:
-...         print(a+"Executing finally clause")
+    try:
+        result = x / y
+    except ZeroDivisionError:
+        print(a+"Division by zero!")
+    else:
+        print(a+"Result is", result)
+    finally:
+        print(a+"Executing finally clause")
 divide("TryExcept1=> ",2,1)
 divide("TryExcept2=> ",2,0)
