@@ -105,7 +105,7 @@ print("Loops=>",end = "")
 for letter in "Rahul is working $ on School":
     if letter == " ": continue
     elif letter == "$": break
-    if letter != 'h': print(letter,end="*")
+    elif letter != 'h': print(letter,end="*")
     else: pass
     print ("=",end = "")
 j = 0

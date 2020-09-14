@@ -51,3 +51,20 @@ with  open("D:/TestTextFile2.txt","w+") as fd:
     y = fd.write(f"{x} Test2 \t Test3") #Assigning varible to write statement gives the current pointer
     print("FileReadWrite8==>",fd.tell(),y,fd.seek(0),fd.read())
     fd.close()
+
+#Global and Local varibale
+a = 29 #Global variable
+def GlobalTest():
+    a = 32 #Local variable to Function, if done a=a+1 errored out as a is not defined
+    def GlobalTest2():
+        global a
+        a = a+1
+    print("GlobalVariale2=>", f"Variable in #1 is {a}") #printing only local varibale a result
+    GlobalTest2()
+    print("GlobalVariale3=>", f"Variable in #2 is {a}") #printing only local varibale a result
+print("GlobalVariale1=>", f"Variable before #1 is {a}") 
+a = 33
+GlobalTest()
+print("GlobalVariale4=>", f"Variable after #1 is {a}") 
+a+=9
+print("GlobalVariale5=>", f"Variable after up is {a}") 
