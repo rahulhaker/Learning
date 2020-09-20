@@ -22,6 +22,10 @@ print("Bitwise Operator=> ", a|b,a&b) #Works on bits 2=10 5 = 101
 
 #Shorthand IfElse
 print("ShortIfElse=> ","A is greater than B") if a>b else print("ShortIfElse=> ","B is greater than A")
+def testtest(a,b):
+    return (1 if (a==b) else 2)
+t = testtest(1,1)
+print ("ShortIfElse=> ",t)
 
 #Functions and Docstring
 def functionwithnoreturn():
