@@ -54,6 +54,25 @@ if __name__ == "__main__":
     print("Program#2 - Pattern Printing")
     #TakeUserInput()
 
+#Exercise2: Faulty calculator ** power and % for Modulo
+'''a= input("Enter what you want to compute: ")
+Oper = ''
+if a.find("+") != -1: Oper = '+'
+elif a.find("/") != -1: Oper = '/'
+elif a.find("*") != -1: Oper = '*'
+elif a.find("-") != -1: Oper = '-'
+print(a,Oper)
+Var1 = int(a[:a.find(Oper)])
+Var2 =int(a[a.find(Oper)+1:])
+Result = 0
+if a == 45 and b == 3 and Oper == "*": Result = 555
+elif a==56 and b == 9 and Oper == "+": Result = 77
+elif Oper == "*": Result = Var1*Var2
+elif Oper == "+": Result = Var1+Var2
+elif Oper == "-": Result = Var1-Var2
+elif Oper == "/": Result = int(float(Var1/Var2))
+print(f'Result is {Result}',end = "\n")'''
+
 #3 - Health Management System
 with open("TestTextFile.txt",'r+') as f:
     a = f. readline()
